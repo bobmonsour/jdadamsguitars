@@ -3,6 +3,15 @@
   --page-width-max: 1200px;
 
   /* Type scale from https://www.fluid-type-scale.com/, smallest to largest */
+  --font-size-sm: clamp(0.7813rem, 0.7744rem + 0.0341vw, 0.8rem);
+  --font-size-base: clamp(0.9375rem, 0.9148rem + 0.1136vw, 1rem);
+  --font-size-md: clamp(1.125rem, 1.0795rem + 0.2273vw, 1.25rem);
+  --font-size-lg: clamp(1.35rem, 1.2727rem + 0.3864vw, 1.5625rem);
+  --font-size-xl: clamp(1.62rem, 1.4989rem + 0.6057vw, 1.9531rem);
+  --font-size-2xl: clamp(1.9438rem, 1.7628rem + 0.9045vw, 2.4413rem);
+  --font-size-3xl: clamp(2.3325rem, 2.0709rem + 1.308vw, 3.0519rem);
+  --font-size-4xl: clamp(2.7994rem, 2.4301rem + 1.8466vw, 3.815rem);
+  /*
   --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
@@ -10,10 +19,16 @@
   --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
   --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  */
 
   /* Accent Colors */
-  --site-bg-color: green;
+  --default-color: #000;
+  --hero-bg-color: #fffcd3;
+  --brand-color: #fffcd3;
 
+  --default-font: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  font-weight: normal;
   --brand-font: Superclarendon, "Bookman Old Style", "URW Bookman",
     "URW Bookman L", "Georgia Pro", Georgia, serif;
+  --sub-brand-font: "Croissant One", cursive;
 }

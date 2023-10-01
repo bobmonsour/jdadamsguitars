@@ -1,11 +1,15 @@
+.contact-form {
+  width: 70%;
+  margin: auto;
+}
+
 form {
-  background: var(--body-bg-color);
-  color: var(--brand-color);
-  width: 100%;
+  background: var(--brand-color);
+  color: black;
   margin: 30px auto;
   padding: 20px 10px 10px 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  border-radius: var(--contact-form-radius);
+  border-radius: 5px;
 }
 
 fieldset {
@@ -22,6 +26,7 @@ fieldset {
 
 #contact label {
   padding-left: 0.25em;
+  font-size: var(--font-size-lg);
 }
 
 #contact input[type="text"],
@@ -34,6 +39,7 @@ fieldset {
   margin: 0 0 5px;
   padding: 10px;
   font-family: var(--default-font);
+  font-size: var(--font-size-lg);
 }
 
 #contact input[type="text"]:hover,
@@ -58,12 +64,12 @@ fieldset {
   cursor: pointer;
   width: 200px;
   border: none;
-  border-radius: var(--contact-button-radius);
+  border-radius: 5px;
   background-color: var(--brand-color);
   color: var(--default-color);
   padding: 10px;
   font-family: var(--default-font);
-  font-size: var(--default-size);
+  font-size: var(--font-size-lg);
 }
 
 #contact button[type="submit"]:hover {
