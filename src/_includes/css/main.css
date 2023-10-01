@@ -44,7 +44,7 @@ img[width][height] {
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: minmax(auto, 1fr);
+  /* grid-auto-rows: minmax(auto, 1fr); */
 }
 
 .hero p {
