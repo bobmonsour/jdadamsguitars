@@ -1,14 +1,15 @@
 body {
   font-family: var(--body-font);
   font-size: var(--font-size-md);
-  background-color: var(--site-bg-color);
+  max-inline-size: min(var(--page-width-max), 100vw - 0.5em);
+  margin-inline: auto;
 }
 /* default <h1> */
 :where(h1) {
   color: gray;
   font-family: var(--brand-font);
   font-size: var(--font-size-xxxl);
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0.1em;
   padding-block: 0.5em 0.25em;
   text-align: center;
@@ -41,8 +42,8 @@ img[width][height] {
 
 /* main content constrained by viewport */
 main {
-  max-inline-size: min(var(--page-width-max), 100vw - 0.5em);
-  margin-inline: auto;
+  /* max-inline-size: min(var(--page-width-max), 100vw - 0.5em);
+  margin-inline: auto; */
 }
 
 .hero {

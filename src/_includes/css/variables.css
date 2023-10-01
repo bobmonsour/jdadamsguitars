@@ -13,7 +13,7 @@
 
   /* Accent Colors */
   --site-bg-color: green;
-}
 
---brand-font: Superclarendon, "Bookman Old Style", "URW Bookman",
-  "URW Bookman L", "Georgia Pro", Georgia, serif;
+  --brand-font: Superclarendon, "Bookman Old Style", "URW Bookman",
+    "URW Bookman L", "Georgia Pro", Georgia, serif;
+}
