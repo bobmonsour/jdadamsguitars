@@ -1,0 +1,31 @@
+---
+permalink: /index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+<body>
+  <header>
+    <h1>J.D. ADAMS</h1>
+    <h2>Fine Handmade Guitars</h2>
+  </header>
+  <main>
+    <div class="hero">
+      {% image "src/images/painting.jpg", "image.alt", "100vw" %}
+      {% image "src/images/about-text.jpg", "image.alt", "100vw" %}
+    </div>
+    <div class="photos">
+      {% image "src/images/g1.jpg", "image.alt", "100vw" %}
+      {% image "src/images/g2.jpg", "image.alt", "100vw" %}
+      {% image "src/images/g3.jpg", "image.alt", "100vw" %}
+      {% image "src/images/g4.jpg", "image.alt", "100vw" %}
+    </div>
+    <div class="contact-form">
+      <p>form goes here</p>
+    </div>
+  </main>
+  <footer>
+    <p>footer here</p>
+  </footer>
+</body>
+</html>
