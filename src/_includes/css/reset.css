@@ -68,3 +68,9 @@ select {
     url("/fonts/Cochin-Italic.woff") format("woff");
   font-style: italic;
 }
+@font-face {
+  font-family: Baskerville;
+  src: url("/fonts/Baskerville-Normal.woff2") format("woff2"),
+    url("/fonts/Baskerville-Normal.woff") format("woff");
+  font-style: italic;
+}
