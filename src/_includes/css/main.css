@@ -53,7 +53,8 @@ img[width][height] {
   background-color: var(--hero-bg-color);
   font-size: var(--font-size-md);
   line-height: 1.5;
-  padding: 3em;
+  padding-block: 6em;
+  padding-inline: 3em;
 }
 .hero-text::first-letter {
   initial-letter: 2;
