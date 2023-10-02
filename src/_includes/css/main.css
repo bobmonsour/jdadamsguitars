@@ -9,20 +9,20 @@ body {
 :where(h1) {
   color: gray;
   font-family: var(--brand-font);
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   font-weight: 300;
   letter-spacing: 0.1em;
   line-height: 1;
   padding-block: 0.5em 0;
   text-align: center;
-  text-indent: -2em;
+  text-indent: -1.5em;
 }
 
 /* default <h2> and <text> */
 :where(h2) {
   color: gray;
   font-family: var(--sub-brand-font);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   font-style: italic;
   font-weight: 100;
   padding-block-end: 0.5em;
@@ -33,10 +33,10 @@ body {
 /* For very small width displays, do not indent or outdent */
 @media (max-width: 400px) {
   :where(h1) {
-    text-indent: -0.5em;
+    text-indent: 0;
   }
   :where(h2) {
-    text-indent: 1em;
+    text-indent: 0;
   }
 }
 
@@ -63,7 +63,7 @@ img[width][height] {
 }
 .hero-text {
   background-color: var(--hero-bg-color);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   line-height: 1.5;
   padding-block: 3em;
   padding-inline: 3em;
@@ -81,7 +81,7 @@ img[width][height] {
 }
 
 .cta {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   margin-block: 2em 1em;
   text-align: center;
 }
