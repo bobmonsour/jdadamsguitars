@@ -23,12 +23,13 @@
 
   /* Accent Colors */
   --default-color: #000;
-  --hero-bg-color: #fffcd3;
+  --site-bg-color: #fff;
+  /* --hero-bg-color: white; */
+  --hero-bg-color: #fffbd2;
   --brand-color: #fffcd3;
 
   --default-font: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
   font-weight: normal;
-  --brand-font: Superclarendon, "Bookman Old Style", "URW Bookman",
-    "URW Bookman L", "Georgia Pro", Georgia, serif;
-  --sub-brand-font: "Croissant One", cursive;
+  --brand-font: Cochin-Regular, serif;
+  --sub-brand-font: Cochin-Italic, cursive;
 }

@@ -54,3 +54,17 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Add font families early */
+@font-face {
+  font-family: Cochin;
+  src: url("/fonts/Cochin-Regular.woff2") format("woff2"),
+    url("/fonts/Cochin-Regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Cochin-Italic;
+  src: url("/fonts/Cochin-Italic.woff2") format("woff2"),
+    url("/fonts/Cochin-Italic.woff") format("woff");
+  font-style: italic;
+}
