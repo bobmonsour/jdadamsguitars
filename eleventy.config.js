@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(bundlerPlugin);
   eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
     let metadata = await Image(src, {
-      widths: [300, 600, 900, 1200],
+      widths: [600],
       formats: ["avif", "jpeg", "webp"],
       urlPath: "/images",
       outputDir: "_site/images",

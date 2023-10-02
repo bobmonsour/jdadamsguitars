@@ -43,18 +43,20 @@ img[width][height] {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-auto-rows: minmax(auto, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
+  grid-auto-rows: auto;
 }
 
-.hero p {
+.hero-image {
+}
+.hero-text {
   background-color: var(--hero-bg-color);
   font-size: var(--font-size-md);
   line-height: 1.5;
   padding: 3em;
 }
-.hero p::first-letter {
-  initial-letter: 3;
+.hero-text::first-letter {
+  initial-letter: 2;
 }
 
 .photos {
