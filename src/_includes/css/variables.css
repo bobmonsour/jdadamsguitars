@@ -20,7 +20,7 @@
   --brand-color: #fffcd3;
 
   /* Font specs */
+  --body-font: Cochin, serif;
   --brand-font: Cochin, serif;
   --sub-brand-font: Cochin-Italic, cursive;
-  --body-font: Cochin, serif;
 }
