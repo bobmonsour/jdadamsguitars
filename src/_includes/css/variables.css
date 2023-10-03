@@ -4,7 +4,7 @@
 
   /* Type scale from https://www.fluid-type-scale.com/, smallest to largest */
   --font-size-sm: clamp(0.8rem, 0.28vw + 0.73rem, 0.94rem);
-  --font-size-base: clamp(1rem, 0.5vw + 0.88rem, 1.25rem);
+  --font-size-base: clamp(1.25rem, 0.5vw + 0.88rem, 1.25rem);
   --font-size-md: clamp(1.25rem, 0.83vw + 1.04rem, 1.67rem);
   --font-size-lg: clamp(1.56rem, 1.32vw + 1.23rem, 2.22rem);
   --font-size-xl: clamp(1.95rem, 2.02vw + 1.45rem, 2.96rem);
@@ -15,7 +15,6 @@
   /* Accent Colors */
   --default-color: #000;
   --site-bg-color: #fff;
-  /* --hero-bg-color: white; */
   --hero-bg-color: #fffbd2;
   --brand-color: #fffcd3;
 
