@@ -1,6 +1,6 @@
 :root {
   /* Page structure */
-  --page-width-max: 1200px;
+  --page-width-max: 1220px;
 
   /* Type scale from https://www.fluid-type-scale.com/, smallest to largest */
   --font-size-sm: clamp(0.8rem, 0.28vw + 0.73rem, 0.94rem);
