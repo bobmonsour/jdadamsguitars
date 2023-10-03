@@ -58,19 +58,15 @@ select {
 /* Add font families early */
 @font-face {
   font-family: Cochin;
+  font-weight: normal;
   src: url("/fonts/Cochin.woff2") format("woff2"),
     url("/fonts/Cochin.woff") format("woff");
-  font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Cochin-Italic;
+  font-style: italic;
   src: url("/fonts/Cochin-Italic.woff2") format("woff2"),
     url("/fonts/Cochin-Italic.woff") format("woff");
-  font-style: italic;
+  font-display: swap;
 }
-/* @font-face {
-  font-family: Baskerville;
-  src: url("/fonts/Baskerville-Normal.woff2") format("woff2"),
-    url("/fonts/Baskerville-Normal.woff") format("woff");
-  font-style: italic;
-} */
