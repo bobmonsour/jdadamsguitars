@@ -58,17 +58,18 @@ img[width][height] {
 }
 
 .hero {
+  align-items: center;
+  background-color: var(--hero-bg-color);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
 }
 
 .hero-text {
-  background-color: var(--hero-bg-color);
   font-size: var(--font-size-base);
   line-height: 1.5;
-  padding-block: 3em;
-  padding-inline: 3em;
+  padding-block: 2em;
+  padding-inline: clamp(1rem, 10%, 5rem);
 }
 .hero-text p {
   margin-block-end: 1em;
