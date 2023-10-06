@@ -65,8 +65,12 @@ img[width][height] {
   padding-block: 3em;
   padding-inline: 3em;
 }
-.hero-text::first-letter {
-  initial-letter: 2;
+.hero-text p {
+  margin-block-end: 1em;
+}
+.p1::first-letter {
+  font-size: 2em;
+  line-height: 0em;
 }
 
 .photos {
