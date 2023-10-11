@@ -37,6 +37,7 @@ body {
     text-indent: 0;
   }
   :where(h2) {
+    letter-spacing: normal;
     text-indent: 0;
   }
 }
