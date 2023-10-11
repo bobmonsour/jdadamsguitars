@@ -73,7 +73,7 @@ img[width][height] {
   font-size: var(--font-size-base);
   line-height: 1.5;
   padding-block: 2em;
-  padding-inline: clamp(1rem, 10%, 5rem);
+  padding-inline: clamp(1rem, 6%, 5rem);
 }
 .hero-text p {
   margin-block-end: 1em;
