@@ -96,7 +96,7 @@ img[width][height] {
 
 .cta {
   font-size: var(--font-size-md);
-  margin-block: 2em 1em;
+  margin: 2em 1.5em 1em 1.5em;
   text-align: center;
 }
 
