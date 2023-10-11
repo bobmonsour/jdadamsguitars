@@ -2,12 +2,12 @@ body {
   background-color: var(--site-bg-color);
   font-family: var(--body-font);
   font-size: var(--font-size-md);
-  max-inline-size: min(var(--page-width-max), 100vw - 0.5em);
+  max-inline-size: min(var(--page-width-max), 100vw);
   margin-inline: auto;
 }
 /* default <h1> */
 :where(h1) {
-  color: gray;
+  color: #636463;
   font-family: var(--brand-font);
   font-size: var(--font-size-3xl);
   font-weight: 300;
@@ -20,14 +20,15 @@ body {
 
 /* default <h2> and <text> */
 :where(h2) {
-  color: gray;
+  color: #636463;
   font-family: var(--sub-brand-font);
   font-size: var(--font-size-xl);
   font-style: italic;
   font-weight: 100;
+  letter-spacing: 3px;
   padding-block-end: 0.5em;
   text-align: center;
-  text-indent: 3.25em;
+  text-indent: 4.8em;
 }
 
 /* For very small width displays, do not indent or outdent */
@@ -39,9 +40,9 @@ body {
     text-indent: 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .hero {
-    box-shadow: 0px 15px 10px -15px #111;
+    box-shadow: 0px 20px 20px -15px #111;
   }
 }
 
@@ -60,7 +61,7 @@ img[width][height] {
 .hero {
   align-items: center;
   background-color: var(--hero-bg-color);
-  box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 15px 20px 20px -15px #111;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
 }
