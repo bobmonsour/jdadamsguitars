@@ -66,22 +66,22 @@ img[width][height] {
 }
 
 .hero-text {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  align-content: space-around;
   font-size: var(--font-size-base);
   line-height: 1.5;
-  padding-block: 2em;
   padding-inline: clamp(1rem, 6%, 5rem);
 }
 .hero-text p {
-  margin-block-end: 1em;
+  margin-block-start: 1.5em;
 }
 .p1::first-letter {
   font-size: 2em;
   line-height: 0em;
 }
 .signature {
-  align-self: flex-end;
+  place-self: end;
 }
 
 .photos {
