@@ -1,15 +1,15 @@
 .contact-form {
-  width: 90%;
   margin: auto;
+  width: 90%;
 }
 
 form {
-  background: var(--brand-color);
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   color: black;
+  background: var(--brand-color);
   margin: 30px auto;
   padding: 20px 10px 10px 10px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  border-radius: 5px;
 }
 
 fieldset {
@@ -25,29 +25,29 @@ fieldset {
 }
 
 #contact label {
-  padding-left: 0.25em;
   font-size: var(--font-size-md);
+  padding-left: 0.25em;
 }
 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="subject"],
 #contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
   background: #fff;
+  border: 1px solid #ccc;
   margin: 0 0 5px;
   padding: 10px;
+  width: 100%;
 }
 
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="subject"],
 #contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
+  transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  -webkit-transition: border-color 0.3s ease-in-out;
 }
 
 #contact textarea {
@@ -56,23 +56,20 @@ fieldset {
 }
 
 #contact button[type="submit"] {
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  width: 200px;
+  background-color: white;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: white;
   color: black;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
   padding: 10px;
+  width: 200px;
 }
 
 #contact button[type="submit"]:hover {
   background-color: black;
   color: white;
-  /* -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out; */
 }
 
 #contact button[type="submit"]:active {
