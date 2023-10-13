@@ -19,7 +19,6 @@ h1 {
 /* default h2*/
 h2 {
   color: #636463;
-  /* font-family: var(--sub-brand-font); */
   font-size: var(--font-size-xl);
   font-style: italic;
   font-weight: 100;
