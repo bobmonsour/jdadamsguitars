@@ -32,11 +32,11 @@ h2 {
 @media (max-width: 425px) {
   h1 {
     margin-block-start: 0.25em;
-    text-indent: -4em;
+    text-indent: -3.5em;
   }
   h2 {
     letter-spacing: normal;
-    text-indent: 2.5em;
+    text-indent: 2em;
   }
 }
 @media (max-width: 325px) {
