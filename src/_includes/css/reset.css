@@ -10,6 +10,13 @@
   box-sizing: border-box;
 }
 
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -20,7 +27,8 @@ p {
 
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
