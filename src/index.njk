@@ -12,7 +12,7 @@ permalink: /index.html
   <main>
     <div class="hero">
       <div class="hero-image">
-        {% image "src/images/mm-artwork.jpg", "image.alt", "100vw" %}
+        {% image "src/images/mm-artwork.jpg", "image.alt", "100vw", "eager" %}
       </div>
       <div class="hero-text">
         <div>
@@ -25,12 +25,12 @@ permalink: /index.html
     </div>
     <div class="photos">
       <div class="photos-subgrid">
-        {% image "src/images/g1.jpg", "image.alt", "100vw" %}
-        {% image "src/images/g2.jpg", "image.alt", "100vw" %}
+        {% image "src/images/g1.jpg", "image.alt", "100vw", "lazy" %}
+        {% image "src/images/g2.jpg", "image.alt", "100vw", "lazy" %}
       </div>
       <div class="photos-subgrid">
-        {% image "src/images/g3.jpg", "image.alt", "100vw" %}
-        {% image "src/images/g4a.jpg", "image.alt", "100vw" %}
+        {% image "src/images/g3.jpg", "image.alt", "100vw", "lazy" %}
+        {% image "src/images/g4a.jpg", "image.alt", "100vw", "lazy" %}
       </div>
     </div>
     <p class="cta">If you'd like to learn more about my guitars, please contact me. I look forward to speaking with you.</p>

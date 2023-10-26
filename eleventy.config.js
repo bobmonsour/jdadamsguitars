@@ -6,21 +6,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.jpg");
   eleventyConfig.addPlugin(bundlerPlugin);
-  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
-    let metadata = await Image(src, {
-      widths: [600],
-      formats: ["avif", "jpeg", "webp"],
-      urlPath: "/images",
-      outputDir: "_site/images",
-    });
-    let imageAttributes = {
-      alt,
-      sizes,
-      decoding: "async",
-    };
-    // You bet we throw an error on a missing alt (alt="" works okay)
-    return Image.generateHTML(metadata, imageAttributes);
-  });
+  eleventyConfig.addShortcode(
+    "image",
+    async function (src, alt, sizes, loading) {
+      let metadata = await Image(src, {
+        widths: [600],
+        formats: ["avif", "jpeg", "webp"],
+        urlPath: "/images",
+        outputDir: "_site/images",
+      });
+      let imageAttributes = {
+        alt,
+        sizes,
+        loading: loading,
+        decoding: "async",
+      };
+      // You bet we throw an error on a missing alt (alt="" works okay)
+      return Image.generateHTML(metadata, imageAttributes);
+    }
+  );
 
   // Return your Object options:
   return {
