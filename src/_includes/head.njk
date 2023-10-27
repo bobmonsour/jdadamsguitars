@@ -42,15 +42,18 @@
   <meta name="apple-mobile-web-app-title" content="J.D. Adams Guitars">
   <meta name="application-name" content="J.D. Adams Guitars">
 
-  {# bundle the CSS content used on all pages and get the link to the bundle #}
-  {%- css %}
+  {# capture the CSS content used on all pages and inline it #}
+  {% set css %}
     {% include "css/reset.css" %}
     {% include "css/variables.css" %}
     {% include "css/main.css" %}
     {% include "css/contact.css" %}
-  {% endcss %}
+  {% endset %}
+  <style>
+    {{ css | safe }}
+  </style>
 
-  <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+  {# <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="CXHCSUTU" defer></script>
